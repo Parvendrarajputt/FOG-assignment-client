@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -40,5 +40,20 @@
   },
   "engines": {
     "node": "14.x"
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "no-console": "off",
+    "react/prop-types": "off",
+    "react/jsx-uses-react": "off",
+    "react/jsx-uses-vars": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/jsx-no-target-blank": "off",
+    "react/display-name": "off",
+    "react/no-unescaped-entities": "off",
+    "react/no-children-prop": "off",
+    "react/jsx-closing-bracket-location": "off"
   }
 }

@@ -26,10 +26,10 @@ const Navbar = () => {
 
       {/* Links visible on medium and larger screens */}
       <div className="flex space-x-16 text-lg hidden md:flex">
-        <a href="/" className="hover:text-gray-400">Home</a>
-        <a href="/shop" className="hover:text-gray-400">Shop</a>
-        <a href="/about" className="hover:text-gray-400">About</a>
-        <a href="/contact" className="hover:text-gray-400">Contact</a>
+        <a href="#" className="hover:text-gray-400">Home</a>
+        <a href="#" className="hover:text-gray-400">Shop</a>
+        <a href="#" className="hover:text-gray-400">About</a>
+        <a href="#" className="hover:text-gray-400">Contact</a>
       </div>
 
       {/* Icons visible on medium and larger screens */}

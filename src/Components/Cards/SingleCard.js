@@ -1,10 +1,9 @@
 import React from 'react';
-import { FaShareAlt, FaExchangeAlt, FaHeart, FaRegHeart } from 'react-icons/fa'; // Import icons
+import { FaShareAlt, FaExchangeAlt, FaRegHeart } from 'react-icons/fa'; 
 
 const SingleCard = ({ product }) => {
   return (
     <div className="relative max-w-sm rounded overflow-hidden shadow-lg border w-72 group transition-all duration-300">
-      {/* Conditional Rendering for Discount Badge */}
       {product.discount && (
         <span
           className={`absolute top-4 right-4 text-white text-xs font-bold flex items-center justify-center w-12 h-12 rounded-full 
