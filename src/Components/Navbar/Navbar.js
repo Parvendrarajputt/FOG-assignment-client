@@ -55,6 +55,29 @@ const Navbar = () => {
         </button>
       </div>
 
+      {/* Right-side Slider (Visible when menuOpen is true) */}
+      <div
+        className={`fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform ${
+          menuOpen ? 'translate-x-0' : 'translate-x-full'
+        } transition-transform duration-300 ease-in-out z-50`}
+      >
+        <div className="p-4">
+          <button
+            onClick={toggleMenu}
+            className="text-xl text-black absolute top-4 right-4"
+          >
+            &#10005; {/* Close Icon */}
+          </button>
+
+          {/* Slider Content */}
+          <div className="flex flex-col items-center space-y-6 mt-12">
+            <a href="/" className="text-lg hover:text-gray-400">Home</a>
+            <a href="/shop" className="text-lg hover:text-gray-400">Shop</a>
+            <a href="/about" className="text-lg hover:text-gray-400">About</a>
+            <a href="/contact" className="text-lg hover:text-gray-400">Contact</a>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };
